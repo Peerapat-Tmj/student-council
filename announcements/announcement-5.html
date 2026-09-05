@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    ============================================================
+    TEMPLATE สำหรับหน้าข่าว/ประกาศ
+    วิธีใช้:
+    1. Copy ไฟล์นี้แล้วเปลี่ยนชื่อเป็น announcementX.html
+    2. แก้ไข <title>, meta description
+    3. แก้ไข breadcrumb ชื่อหน้า
+    4. แก้ไข article-meta (tag / วันที่)
+    5. แก้ไข <h1> ชื่อเรื่อง
+    6. แก้ไขเนื้อหาใน .article-content
+    7. เปลี่ยนรูปภาพ article-hero-img (ถ้ามี)
+    ============================================================
+  -->
+  <title>ข่าวสาร - คณะกรรมการสภานักเรียนโรงเรียนสิรินธรราชวิทยาลัย</title>
+  <meta name="description" content="[คำอธิบายสั้นๆ]">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>body { font-family: 'Sarabun', 'TH Sarabun New', sans-serif; } :root { --font-body: 'Sarabun', sans-serif; }</style>
+</head>
+<body>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">หน้าแรก</a>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+        <a href="index.html">ข่าวสาร</a>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+        <span>ตลาดนัดนักเรียน ”ทำหรอย แล้วหลาว“</span><!-- [แก้ไข] ชื่อย่อหน้า -->
+      </div>
+      <h1>ตลาดนัดนักเรียน ”ทำหรอย แล้วหลาว“</h1><!-- [แก้ไข] -->
+    </div>
+  </section>
+
+  <!-- Article -->
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <!-- Main Content -->
+        <article class="article-body fade-in">
+
+          <!-- รูปภาพหลัก (ถ้าไม่มีรูป ลบ img tag ออก) -->
+          <img style="object-fit: cover;"
+            src="../assets/images/announcements/south.jpg"
+            alt="[คำอธิบายรูป]"
+            class="article-hero-img"
+            onerror="this.style.display='none'"
+          >
+
+          <div class="article-meta">
+            <span class="tag">[กิจกรรม]</span><!-- [แก้ไข] ประเภท: ประกาศ / ข่าว / กิจกรรม / ทั่วไป -->
+            <span class="date">📅 5 สิงหาคม 2569</span><!-- [แก้ไข] วันที่ -->
+            <span class="date">✍️  คณะกรรมการสภานักเรียน</span>
+          </div>
+
+          <!-- เนื้อหาข่าว [แก้ไขส่วนนี้] -->
+          <div class="article-content">
+            <p>
+              📢 ตลาดนัดนักเรียน ”ทำหรอย แล้วหลาว“ เป็นกิจกรรมที่จัดขึ้นเพื่อส่งเสริมการเรียนรู้และสร้างความสนุกสนานให้กับนักเรียน 
+            <p>
+              รับสมัครวันนี้ - ถึงวันที่ 9 สิงหาคม 2569 (ก่อน 12:00)
+            </p>
+            #ตลาดนัดนักเรียน #สิรินธรราชวิทยาลัย #คณะกรรมการสภานักเรียนโรงเรียนสิรินธรราชวิทยาลัย #psccouncil
+            <P>
+              รายละเอียดเพิ่มเติม : <a href="https://www.instagram.com/p/Dbo-75UmU3P/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" style="color: blue;" target="_blank">คลิกที่นี่</a>
+            </P>
+            <p style="color:var(--gray-400);font-size:.9rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--purple-100)">
+              ประกาศ ณ วันที่ 5 สิงหาคม 2569<br>
+              คณะกรรมการสภานักเรียน โรงเรียนสิรินธรราชวิทยาลัย<br>
+              โรงเรียนสิรินธรราชวิทยาลัย
+            </p>
+          </div>
+          <!-- /เนื้อหาข่าว -->
+
+          <div style="margin-top:32px">
+            <a href="index.html" class="btn btn-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg>
+              กลับหน้าข่าวสาร
+            </a>
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar fade-in" style="transition-delay:.1s">
+          <div class="sidebar-card">
+            <h4>ข่าวสารล่าสุด</h4>
+            <div class="recent-news-list">
+              <!-- เพิ่มข่าวล่าสุดที่นี่ (ถ้ามี) -->
+              <!--
+              <div class="recent-news-item">
+                <div class="thumb">
+                  <img src="../assets/images/announcements/[รูป].jpg" alt="" onerror="this.style.display='none'">
+                </div>
+                <div>
+                  <a href="[ไฟล์ HTML].html">[ชื่อข่าว]</a>
+                  <div class="small-date">[วันที่]</div>
+                </div>
+              </div>
+              -->
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>ลิงก์ที่เกี่ยวข้อง</h4>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <a href="../about/committee.html" style="color:var(--purple-600);font-size:.9rem;display:flex;align-items:center;gap:6px">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:16px;height:16px"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+                ทำเนียบองค์การบริหารนักเรียน
+              </a>
+              <a href="../about/history.html" style="color:var(--purple-600);font-size:.9rem;display:flex;align-items:center;gap:6px">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:16px;height:16px"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+                ประวัติคณะกรรมการสภานักเรียนฯ
+              </a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="../assets/js/components.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apps for Education | คณะกรรมการสภานักเรียนโรงเรียนสิรินธรราชวิทยาลัย</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    body { font-family: 'Sarabun', 'TH Sarabun New', sans-serif; }
+    :root { --font-body: 'Sarabun', sans-serif; }
+    .apps-intro { max-width: 760px; margin: 0 auto 48px; text-align: center; }
+    .apps-intro h2 { margin-bottom: 14px; }
+    .apps-intro p { color: var(--gray-600); margin-bottom: 0; }
+    .apps-section { margin-bottom: 56px; }
+    .apps-section:last-of-type { margin-bottom: 0; }
+    .apps-section-header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+    .apps-section-mark { width: 8px; height: 40px; border-radius: 4px; background: linear-gradient(180deg, var(--purple-400), var(--purple-700)); flex-shrink: 0; }
+    .apps-section-header h2 { margin: 0; }
+    .apps-section-header p { color: var(--gray-600); margin: 4px 0 0; }
+    .apps-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .apps-gallery figure { margin: 0; overflow: hidden; border: 1px solid var(--purple-100); border-radius: var(--radius-md); background: var(--white); box-shadow: var(--shadow-sm); }
+    .apps-gallery img { width: 100%; height: auto; transition: transform var(--transition); }
+    .apps-gallery figure:hover img { transform: scale(1.02); }
+    .apps-gallery figcaption { padding: 10px 14px 12px; color: var(--gray-600); font-size: .95rem; }
+    .credit-box { margin-top: 56px; padding: 32px 24px; text-align: center; border: 1px solid var(--purple-200); border-radius: var(--radius-lg); background: var(--purple-50); }
+    .credit-box h2 { margin-bottom: 12px; }
+    .credit-box p { color: var(--gray-600); margin: 0; }
+    .credit-box strong { color: var(--purple-700); }
+    @media (max-width: 640px) {
+      .apps-gallery { grid-template-columns: 1fr; }
+      .apps-section-header { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">หน้าแรก</a>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+        <span>Apps for Education</span>
+      </div>
+      <h1>Apps for Education</h1>
+      <p>รวมแอปพลิเคชันเพื่อการเรียนรู้และการสร้างสรรค์ผลงานของนักเรียน</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="apps-intro">
+        <h2>เรียนรู้ สร้างสรรค์ และต่อยอดด้วยเทคโนโลยี</h2>
+        <p>เครื่องมือดิจิทัลที่ช่วยให้นักเรียนเข้าถึงการเรียนรู้ ออกแบบผลงาน และใช้เทคโนโลยีได้อย่างเต็มศักยภาพ</p>
+      </div>
+
+      <div class="apps-section">
+        <div class="apps-section-header">
+          <span class="apps-section-mark" aria-hidden="true"></span>
+          <div>
+            <h2>Canva for Education</h2>
+            <p>ออกแบบสื่อการเรียนรู้และผลงานสร้างสรรค์ได้อย่างมืออาชีพ (คณะกรรมการสภานักเรียนปี 2568 เป็นผู้ดำเนินงาน)</p>
+          </div>
+        </div>
+        <div class="apps-gallery">
+          <figure><img src="../assets/images/announcements/canva1.jpg" alt="วิธีเข้าใช้งาน Canva for Education" loading="lazy"><figcaption>Canva for Education</figcaption></figure>
+          <figure><img src="../assets/images/announcements/canva2.jpg" alt="ประโยชน์ของการใช้งานอีเมลโรงเรียน" loading="lazy"><figcaption>ประโยชน์ของการใช้งานอีเมลโรงเรียน</figcaption></figure>
+          <figure><img src="../assets/images/announcements/canva3.jpg" alt="ขั้นตอนการเข้าสู่ระบบอีเมลโรงเรียน" loading="lazy"><figcaption>ขั้นตอนการเข้าสู่ระบบอีเมลโรงเรียน</figcaption></figure>
+          <figure><img src="../assets/images/announcements/canva4.jpg" alt="Canva for Education สำหรับสถานศึกษา" loading="lazy"><figcaption>วิธีเข้าใช้งาน Canva for Education สำหรับสถานศึกษา</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="apps-section">
+        <div class="apps-section-header">
+          <span class="apps-section-mark" aria-hidden="true"></span>
+          <div>
+            <h2>Gemini for Education</h2>
+            <p>ผู้ช่วยด้านการเรียนรู้และการค้นคว้าสำหรับนักเรียน</p>
+          </div>
+        </div>
+        <div class="apps-gallery">
+          <figure><img src="../assets/images/announcements/gemini%20fix.jpg" alt="Gemini for Education" loading="lazy"><figcaption>Gemini for Education</figcaption></figure>
+          <figure><img src="../assets/images/announcements/gemini2.jpg" alt="วิธีการใช้งาน Gemini for Education" loading="lazy"><figcaption>วิธีเข้าใช้งาน Gemini for Education  สำหรับสถานศึกษา</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="credit-box">
+        <h2>ขอขอบคุณ</h2>
+        <p>ยกความดีความชอบให้แก่ <strong>กลุ่มงานคอมพิวเตอร์</strong> จัดทำ Canva for Education , Gemini for Education และ <strong>คณะกรรมการสภานักเรียน ปี 2568</strong><br>สำหรับการดำเนินงาน Canva for Education</p>
+      </div>
+
+      <div style="text-align:center;margin-top:40px">
+        <a href="../index.html" class="btn btn-primary">← กลับหน้าแรก</a>
+      </div>
+    </div>
+  </section>
+  <script src="../assets/js/components.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
