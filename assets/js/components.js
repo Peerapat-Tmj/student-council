@@ -3,12 +3,7 @@
    สภานักเรียน โรงเรียนสิรินธรราชวิทยาลัย
    ============================================= */
 
-const SITE_ROOT = (() => {
-  const path = window.location.pathname;
-  // count depth from root
-  const depth = (path.match(/\//g) || []).length - 1;
-  return depth > 0 ? '../'.repeat(depth) : './';
-})();
+const SITE_ROOT = new URL('../../', document.currentScript.src).href;
 
 function renderNavbar() {
   const nav = document.createElement('nav');
