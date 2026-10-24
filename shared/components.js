@@ -3,7 +3,7 @@
    สภานักเรียน โรงเรียนสิรินธรราชวิทยาลัย
    ============================================= */
 
-const SITE_ROOT = new URL('../../', document.currentScript.src).href;
+const SITE_ROOT = new URL('../', document.currentScript.src).href;
 
 function renderNavbar() {
   const nav = document.createElement('nav');
@@ -42,8 +42,9 @@ function renderNavbar() {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
                 ทำเนียบองค์การบริหารนักเรียน
               </a>
+            </li>
             <li>
-              <a href="https://drive.google.com/drive/folders/1sztJbIJDB-AnW-R82uVhR9fGFZw1IlWr" class="dropdown-item">
+              <a href="https://drive.google.com/drive/folders/1sztJbIJDB-AnW-R82uVhR9fGFZw1IlWr" target="_blank" rel="noopener" class="dropdown-item">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="64" height="64" viewBox="0 0 24 24" style="color: rgb(128, 82, 246);"><path fill="currentColor" d="M18 8h-8V6h8zm4-4v8l-6 6H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2m-2 0H8v12h6v-4a2 2 0 0 1 2-2h4zM4 6a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2H4z"></path></svg>
                 ธรรมนูญสภานักเรียน
               </a>
@@ -65,8 +66,6 @@ function renderNavbar() {
 
             <li>
               <a href="https://umbrella-system-fb0a1.web.app/" target="_blank" rel="noopener" class="dropdown-item">
-                <?xml version="1.0" encoding="utf-8"?>
-                <!-- License: Apache. Made by googlefonts: https://github.com/googlefonts/noto-emoji -->
                 <svg width="800px" height="800px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path fill="#6aa5ad" d="M60.2 96.55l-.31-42.82l5.57.31l.31 44.83z"></path><path d="M47.46 104.64c-3.27-.16-4.94 2.31-4.52 6.93c.42 4.62 3.14 11.63 12.6 11.45c10.92-.21 11.75-7.8 11.57-16.21c-.12-5.85 0-10.48-.31-10.69s-7.9-.41-8.32.01c-.42.42-.11 9.56-.21 11.76s.28 6.62-3.78 6.51c-3.15-.09-3.57-2.73-3.57-3.99c.01-1.25.74-5.56-3.46-5.77z" fill="#3f7377"></path><path d="M52.12 36.21l10.42-18.75s-20.55-2.54-38.8 11.63C.54 47.11 4.21 66.86 4.21 66.86s8.84-8.42 16.07-7.78s16.29 9.39 16.29 9.39l15.55-32.26z" fill="#937ef3"></path><path d="M65.06 23.21l-1.49-5.75s20.87-.23 36.42 9.96c26.73 17.52 23.78 37.08 23.78 37.08s-5.8-8.08-18.54-7.51s-17.4 11.94-17.4 11.94L65.06 23.21z" fill="#5547f4"></path><path d="M87.86 68.12S86.7 49 82.26 39.17c-8.1-17.95-19.25-21.42-19.25-21.42s-13.42 6.6-20.48 22.87s-5.85 27.76-5.85 27.76s10.86-12.41 26.67-10.7s24.51 10.44 24.51 10.44z" fill="#6e62ed"></path><path d="M59.11 18.23c-.14-.55-.02-7.9-.07-9.48c-.07-2.34 1.92-3.83 3.71-3.78c2.34.07 3.16 2.13 3.23 3.57s.08 9.52.07 9.62c-.09.84-1.32 1.64-3.5 1.65c-1.59 0-3.25-.82-3.44-1.58z" fill="#6ca4ab"></path><path d="M87.79 70.59c1.64-.1 8.19-11.36 18.47-11.26c13.95.14 15.75 7.39 17.21 6.64c1.61-.82-.76-3.83-2.87-6.01c-2.98-3.08-7.75-4.94-15.16-4.46c-10.79.7-17.75 10.27-17.75 10.27s-9.2-10.04-25.33-10.04c-15.6 0-25.67 11.1-25.67 11.1s-5.1-9.02-17.51-9.24c-10.96-.18-15.7 8.65-14.93 9.42c.77.77 6.61-6.23 14.8-5.88c11.26.48 15.2 9.89 17.36 9.94c2.15.05 10.56-11.3 26.15-11.03c16.74.29 23.69 10.65 25.23 10.55z" fill="#004dae"></path></svg>
                 โครงการ “ร่มให้ยืม”
               </a>
@@ -134,7 +133,7 @@ function renderMobileMenu() {
               ทำเนียบองค์การบริหารนักเรียน
             </a></li>
             <li>
-              <a href="https://drive.google.com/drive/folders/1sztJbIJDB-AnW-R82uVhR9fGFZw1IlWr" class="m-sub-link">
+              <a href="https://drive.google.com/drive/folders/1sztJbIJDB-AnW-R82uVhR9fGFZw1IlWr" target="_blank" rel="noopener" class="m-sub-link">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="64" height="64" viewBox="0 0 24 24" style="color: rgb(128, 82, 246);"><path fill="currentColor" d="M18 8h-8V6h8zm4-4v8l-6 6H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2m-2 0H8v12h6v-4a2 2 0 0 1 2-2h4zM4 6a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2H4z"></path></svg>
                 ธรรมนูญสภานักเรียน
               </a>
@@ -148,16 +147,14 @@ function renderMobileMenu() {
           </span>
           <ul class="m-sub-menu" id="m-activities">
             <li>
-              <a href="${SITE_ROOT}activities/activity2.html" class="dropdown-item">
+              <a href="${SITE_ROOT}activities/activity2.html" class="m-sub-link">
                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M27 6H5C3.34315 6 2 7.34315 2 9V23C2 24.6569 3.34315 26 5 26H27C28.6569 26 30 24.6569 30 23V9C30 7.34315 28.6569 6 27 6Z" fill="#b048b1"></path> <path d="M16 6V26H5C4.20435 26 3.44129 25.6839 2.87868 25.1213C2.31607 24.5587 2 23.7956 2 23V9C2 8.20435 2.31607 7.44129 2.87868 6.87868C3.44129 6.31607 4.20435 6 5 6H16Z" fill="#bb69d8"></path> <path d="M12 6V20C12 20.2652 11.8946 20.5196 11.7071 20.7071C11.5196 20.8946 11.2652 21 11 21C10.7348 21 10.4804 20.8946 10.2929 20.7071C10.1054 20.5196 10 20.2652 10 20V6H12Z" fill="#F5F5F5"></path> <path d="M25 13H20C19.7348 13 19.4804 12.8946 19.2929 12.7071C19.1054 12.5196 19 12.2652 19 12C19 11.7348 19.1054 11.4804 19.2929 11.2929C19.4804 11.1054 19.7348 11 20 11H25C25.2652 11 25.5196 11.1054 25.7071 11.2929C25.8946 11.4804 26 11.7348 26 12C26 12.2652 25.8946 12.5196 25.7071 12.7071C25.5196 12.8946 25.2652 13 25 13Z" fill="#E0E0E0"></path> <path d="M25 17H22C21.7348 17 21.4804 16.8946 21.2929 16.7071C21.1054 16.5196 21 16.2652 21 16C21 15.7348 21.1054 15.4804 21.2929 15.2929C21.4804 15.1054 21.7348 15 22 15H25C25.2652 15 25.5196 15.1054 25.7071 15.2929C25.8946 15.4804 26 15.7348 26 16C26 16.2652 25.8946 16.5196 25.7071 16.7071C25.5196 16.8946 25.2652 17 25 17Z" fill="#E0E0E0"></path> <path d="M25 21H20C19.7348 21 19.4804 20.8946 19.2929 20.7071C19.1054 20.5196 19 20.2652 19 20C19 19.7348 19.1054 19.4804 19.2929 19.2929C19.4804 19.1054 19.7348 19 20 19H25C25.2652 19 25.5196 19.1054 25.7071 19.2929C25.8946 19.4804 26 19.7348 26 20C26 20.2652 25.8946 20.5196 25.7071 20.7071C25.5196 20.8946 25.2652 21 25 21Z" fill="#E0E0E0"></path> </g></svg>
                 Apps for Education
               </a>
             </li>
 
             <li>
-              <a href="https://umbrella-system-fb0a1.web.app/" target="_blank" rel="noopener" class="dropdown-item">
-                <?xml version="1.0" encoding="utf-8"?>
-                <!-- License: Apache. Made by googlefonts: https://github.com/googlefonts/noto-emoji -->
+              <a href="https://umbrella-system-fb0a1.web.app/" target="_blank" rel="noopener" class="m-sub-link">
                 <svg width="800px" height="800px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path fill="#6aa5ad" d="M60.2 96.55l-.31-42.82l5.57.31l.31 44.83z"></path><path d="M47.46 104.64c-3.27-.16-4.94 2.31-4.52 6.93c.42 4.62 3.14 11.63 12.6 11.45c10.92-.21 11.75-7.8 11.57-16.21c-.12-5.85 0-10.48-.31-10.69s-7.9-.41-8.32.01c-.42.42-.11 9.56-.21 11.76s.28 6.62-3.78 6.51c-3.15-.09-3.57-2.73-3.57-3.99c.01-1.25.74-5.56-3.46-5.77z" fill="#3f7377"></path><path d="M52.12 36.21l10.42-18.75s-20.55-2.54-38.8 11.63C.54 47.11 4.21 66.86 4.21 66.86s8.84-8.42 16.07-7.78s16.29 9.39 16.29 9.39l15.55-32.26z" fill="#937ef3"></path><path d="M65.06 23.21l-1.49-5.75s20.87-.23 36.42 9.96c26.73 17.52 23.78 37.08 23.78 37.08s-5.8-8.08-18.54-7.51s-17.4 11.94-17.4 11.94L65.06 23.21z" fill="#5547f4"></path><path d="M87.86 68.12S86.7 49 82.26 39.17c-8.1-17.95-19.25-21.42-19.25-21.42s-13.42 6.6-20.48 22.87s-5.85 27.76-5.85 27.76s10.86-12.41 26.67-10.7s24.51 10.44 24.51 10.44z" fill="#6e62ed"></path><path d="M59.11 18.23c-.14-.55-.02-7.9-.07-9.48c-.07-2.34 1.92-3.83 3.71-3.78c2.34.07 3.16 2.13 3.23 3.57s.08 9.52.07 9.62c-.09.84-1.32 1.64-3.5 1.65c-1.59 0-3.25-.82-3.44-1.58z" fill="#6ca4ab"></path><path d="M87.79 70.59c1.64-.1 8.19-11.36 18.47-11.26c13.95.14 15.75 7.39 17.21 6.64c1.61-.82-.76-3.83-2.87-6.01c-2.98-3.08-7.75-4.94-15.16-4.46c-10.79.7-17.75 10.27-17.75 10.27s-9.2-10.04-25.33-10.04c-15.6 0-25.67 11.1-25.67 11.1s-5.1-9.02-17.51-9.24c-10.96-.18-15.7 8.65-14.93 9.42c.77.77 6.61-6.23 14.8-5.88c11.26.48 15.2 9.89 17.36 9.94c2.15.05 10.56-11.3 26.15-11.03c16.74.29 23.69 10.65 25.23 10.55z" fill="#004dae"></path></svg>
                 โครงการ “ร่มให้ยืม”
               </a>
@@ -231,9 +228,40 @@ function renderFooter() {
   document.body.appendChild(footer);
 }
 
-// Auto-render on load
+function initMenuToggle() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const overlay = document.querySelector('.mobile-overlay');
+
+  if (!hamburger || !mobileMenu || !overlay) return;
+
+  function setOpen(open) {
+    hamburger.classList.toggle('open', open);
+    mobileMenu.classList.toggle('open', open);
+    overlay.classList.toggle('active', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+
+  hamburger.addEventListener('click', () => {
+    setOpen(!mobileMenu.classList.contains('open'));
+  });
+  overlay.addEventListener('click', () => setOpen(false));
+
+  document.querySelectorAll('.m-nav-link[data-toggle]').forEach(link => {
+    link.addEventListener('click', () => {
+      const target = document.getElementById(link.dataset.toggle);
+      if (!target) return;
+
+      target.classList.toggle('open');
+      const arrow = link.querySelector('.m-arrow');
+      if (arrow) arrow.style.transform = target.classList.contains('open') ? 'rotate(180deg)' : '';
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   renderNavbar();
   renderMobileMenu();
   renderFooter();
+  initMenuToggle();
 });

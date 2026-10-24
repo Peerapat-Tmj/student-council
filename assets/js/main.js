@@ -5,38 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---- Hamburger / Mobile Menu ---- */
-  const hamburger = document.querySelector('.hamburger');
-  const mobileMenu = document.querySelector('.mobile-menu');
-  const overlay    = document.querySelector('.mobile-overlay');
-
-  function openMenu() {
-    hamburger?.classList.add('open');
-    mobileMenu?.classList.add('open');
-    overlay?.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeMenu() {
-    hamburger?.classList.remove('open');
-    mobileMenu?.classList.remove('open');
-    overlay?.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-  hamburger?.addEventListener('click', () =>
-    mobileMenu?.classList.contains('open') ? closeMenu() : openMenu()
-  );
-  overlay?.addEventListener('click', closeMenu);
-
-  // Mobile sub-menus
-  document.querySelectorAll('.m-nav-link[data-toggle]').forEach(link => {
-    link.addEventListener('click', () => {
-      const target = document.getElementById(link.dataset.toggle);
-      target?.classList.toggle('open');
-      const arrow = link.querySelector('.m-arrow');
-      if (arrow) arrow.style.transform = target?.classList.contains('open') ? 'rotate(180deg)' : '';
-    });
-  });
-
   /* ---- Hero Slider ---- */
   const slides      = document.querySelectorAll('.slide');
   const indicators  = document.querySelectorAll('.indicator');
